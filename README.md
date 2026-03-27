@@ -1,14 +1,16 @@
 # Wonderland Theme
 
-I created this new sub-theme, Child theme of **Twenty Twenty-Four** (custom blocks: hero, multi-step modal form, etc.).
+I created this new sub-theme, child theme of **Twenty Twenty-Four** (custom blocks: hero, multi-step modal form, etc.).
 Development environment runs on Pantheon using its free Dev server.
 
-## What was implemented
+I chose a child theme approach to keep a stable, production-ready base while implementing custom functionality and visual requirements with low maintenance risk.
 
-- Built a custom **Hero** as a dynamic Gutenberg block (`wonderland/hero`) with editable content, CTA links, and responsive styles.
-- Built a custom **Multi-step Modal Form** as a dynamic Gutenberg block (`wonderland/multi-step-modal-form`) with front-end behavior (open/close, steps, validation, success state).
-- Implemented the site header as a **theme template part** (`parts/header.html`) so it is managed at theme level and reused across pages.
-- Did **not** use ACF for this scope, because all required content is fully editable through the Site Editor and custom block controls.
+Why this approach:
+
+- It preserves compatibility with WordPress core updates and keeps future maintenance simpler than a fully custom theme from scratch.
+- It allows focused customization only where needed (custom blocks, styles, and template parts) without rebuilding foundational behavior already solved by Twenty Twenty-Four.
+- It keeps a clear separation between inherited base capabilities and project-specific code, which improves reviewability and onboarding.
+- Working directly on an existing theme would also have been a valid option, but using a child theme avoids modifying parent files and reduces regression risk when the parent theme is updated.
 
 ## Reusing the Multi-step Modal Form block
 
