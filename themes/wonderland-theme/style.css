@@ -188,7 +188,7 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1142px) {
 	.wonderland-header__promo.alignfull {
 		padding-left: 24px !important;
 		padding-right: 24px !important;
@@ -354,18 +354,14 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 	}
 
 	.wonderland-header__phone-wrap .wp-block-button__link {
-		width: auto;
-		max-width: 100%;
-		height: auto;
+		width: 36px;
+		max-width: 36px;
+		height: 36px;
 		min-height: 36px;
-		padding: 4px 8px !important;
-		gap: 8px;
-		font-size: 13px;
-	}
-
-	.wonderland-header__main.alignfull {
-		padding: 10px 12px !important;
-		min-height: 74px;
+		padding: 4px !important;
+		gap: 0;
+		font-size: 0;
+		line-height: 0;
 	}
 
 	.wonderland-header__main .alignwide {
@@ -378,13 +374,27 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 		justify-content: flex-start !important;
 	}
 
+	.wonderland-header__main .alignwide > .wp-block-group:last-child {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 8px;
+	}
+
 	.wonderland-header__main .wp-block-site-logo img,
 	.wonderland-header__main .custom-logo {
-		width: 160px !important;
+		width: 130px !important;
 	}
 
 	.wonderland-header__quote-btn .wp-block-button__link {
 		padding: 10px 16px !important;
-		font-size: 13px;
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.wonderland-header__main.alignfull {
+		padding: 10px 12px !important;
 	}
 }
