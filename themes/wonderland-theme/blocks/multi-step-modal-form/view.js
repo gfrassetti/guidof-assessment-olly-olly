@@ -26,6 +26,16 @@ class MultiStepModalForm {
 	}
 
 	handleDocumentClick(event) {
+		const insideModal = event.target.closest('[data-modal-root]');
+		if (insideModal) {
+			const isExternalOpenTrigger =
+				event.target.closest('.js-open-modal') ||
+				event.target.closest('.wonderland-header__quote-btn .wp-block-button__link');
+			if (!isExternalOpenTrigger) {
+				return;
+			}
+		}
+
 		const trigger = event.target.closest('.js-open-modal');
 		const quoteLink = event.target.closest('.wonderland-header__quote-btn .wp-block-button__link');
 
@@ -54,6 +64,8 @@ class MultiStepModalForm {
 		}
 
 		event.preventDefault();
+		event.stopPropagation();
+		event.stopImmediatePropagation();
 		this.open(el);
 	}
 
@@ -61,6 +73,7 @@ class MultiStepModalForm {
 		if (event.target.matches('[data-modal-close]') || event.target.closest('[data-modal-close]')) {
 			event.preventDefault();
 			event.stopPropagation();
+			event.stopImmediatePropagation();
 			this.close();
 		}
 	}

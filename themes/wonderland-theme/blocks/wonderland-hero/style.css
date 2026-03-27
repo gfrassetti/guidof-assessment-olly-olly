@@ -286,7 +286,7 @@
 	}
 
 	.wonderland-hero__rating {
-		width: auto;
+		width: 100%;
 		min-height: auto;
 	}
 

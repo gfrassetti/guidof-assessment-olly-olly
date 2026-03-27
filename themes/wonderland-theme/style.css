@@ -181,6 +181,37 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 	}
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+	.wonderland-header__main.alignfull {
+		height: auto;
+		min-height: 96px;
+		padding-left: 24px !important;
+		padding-right: 24px !important;
+	}
+
+	.wonderland-header__main .alignwide.is-layout-flex,
+	.wonderland-header__main .alignwide > .wp-block-group.is-layout-flex,
+	.wonderland-header__main .wp-block-navigation__container.is-layout-flex {
+		flex-wrap: nowrap !important;
+	}
+
+	.wonderland-header__main .alignwide {
+		justify-content: space-between;
+		row-gap: 0;
+	}
+
+	.wonderland-header__main .wp-block-site-logo img,
+	.wonderland-header__main .custom-logo {
+		width: 220px !important;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.wonderland-header__quote-btn .wp-block-button__link {
+		padding: 12px 18px !important;
+	}
+}
+
 @media (max-width: 480px) {
 	.wonderland-header__main.alignfull {
 		height: auto;
