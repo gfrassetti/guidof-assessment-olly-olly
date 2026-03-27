@@ -285,17 +285,21 @@
 		column-gap: 24px;
 	}
 
-	.wonderland-hero__rating {
-		width: 100%;
-		min-height: auto;
-	}
-
 	.wonderland-hero__stars-row {
 		width: auto;
 		max-width: 100%;
 		height: auto;
 		min-height: 23.2px;
 		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 768px) {
+	.wonderland-hero__rating {
+		display: flex;
+		width: max-content;
+		max-width: 100%;
+		min-height: auto;
 	}
 }
 
@@ -315,5 +319,9 @@
 	.wonderland-hero__description {
 		font-size: 0.8125rem;
 		text-align: center;
+	}
+
+	.wonderland-hero__cta {
+		padding: 0;
 	}
 }

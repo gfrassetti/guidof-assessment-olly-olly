@@ -17,6 +17,10 @@ html {
 	overflow-x: clip;
 }
 
+body .is-layout-flex {
+	flex-wrap: nowrap !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
@@ -461,5 +465,14 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 	.wonderland-header__main .wp-block-navigation a:where(:not(.wp-element-button)),
 	.wonderland-header__main .wp-block-navigation .wp-block-navigation-item:last-child > a {
 		font-size: 12px;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 600px) {
+	.wonderland-header__main .wp-block-site-logo img,
+	.wonderland-header__main .custom-logo {
+		width: 150px !important;
+		max-width: 100%;
+		height: auto;
 	}
 }
