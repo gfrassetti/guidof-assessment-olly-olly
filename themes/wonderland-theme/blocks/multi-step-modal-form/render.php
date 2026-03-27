@@ -38,8 +38,9 @@ $wrapper_attributes = get_block_wrapper_attributes(
 
 					<section class="wonderland-modal__step is-active" data-step="1">
 						<div class="wonderland-modal__step-content">
-							<label class="wonderland-modal__label" for="<?php echo esc_attr( $modal_id ); ?>-name"><?php echo $name_label; ?></label>
-							<input id="<?php echo esc_attr( $modal_id ); ?>-name" class="wonderland-modal__input" name="name" type="text" autocomplete="name" placeholder="<?php echo esc_attr( $name_placeholder ); ?>" required />
+							<label class="wonderland-modal__label" for="<?php echo esc_attr( $modal_id ); ?>-email"><?php echo $email_label; ?></label>
+							<input id="<?php echo esc_attr( $modal_id ); ?>-email" class="wonderland-modal__input" name="email" type="email" autocomplete="email" placeholder="<?php echo esc_attr( $email_placeholder ); ?>" required />
+							<p class="wonderland-modal__hint"><?php esc_html_e( "By entering your email information, you accept to receive emails from Wonder-land.", 'wonderland-theme' ); ?></p>
 							<div class="wonderland-modal__actions">
 								<button type="button" class="wonderland-modal__btn wonderland-modal__btn--primary" data-action="next"><?php esc_html_e( 'Next', 'wonderland-theme' ); ?></button>
 							</div>
@@ -48,9 +49,8 @@ $wrapper_attributes = get_block_wrapper_attributes(
 
 					<section class="wonderland-modal__step" data-step="2" hidden>
 						<div class="wonderland-modal__step-content">
-							<label class="wonderland-modal__label" for="<?php echo esc_attr( $modal_id ); ?>-email"><?php echo $email_label; ?></label>
-							<input id="<?php echo esc_attr( $modal_id ); ?>-email" class="wonderland-modal__input" name="email" type="email" autocomplete="email" placeholder="<?php echo esc_attr( $email_placeholder ); ?>" required />
-							<p class="wonderland-modal__hint"><?php esc_html_e( "By entering your email information, you accept to receive emails from Wonder-land.", 'wonderland-theme' ); ?></p>
+							<label class="wonderland-modal__label" for="<?php echo esc_attr( $modal_id ); ?>-name"><?php echo $name_label; ?></label>
+							<input id="<?php echo esc_attr( $modal_id ); ?>-name" class="wonderland-modal__input" name="name" type="text" autocomplete="name" placeholder="<?php echo esc_attr( $name_placeholder ); ?>" required />
 							<div class="wonderland-modal__actions">
 								<button type="button" class="wonderland-modal__btn wonderland-modal__btn--ghost" data-action="back"><?php esc_html_e( 'Go back', 'wonderland-theme' ); ?></button>
 								<button type="button" class="wonderland-modal__btn wonderland-modal__btn--primary" data-action="next"><?php esc_html_e( 'Next', 'wonderland-theme' ); ?></button>

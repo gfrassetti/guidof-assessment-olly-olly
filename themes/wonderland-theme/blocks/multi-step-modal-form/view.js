@@ -282,6 +282,20 @@ class MultiStepModalForm {
 
 	validateStep(stepNumber) {
 		if (stepNumber === 1) {
+			const emailInput = this.form.querySelector('input[name="email"]');
+			const email = (emailInput.value || '').trim();
+			const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+			if (!emailRegex.test(email)) {
+				emailInput.setAttribute('aria-invalid', 'true');
+				this.showError('Please enter a valid email address.');
+				emailInput.focus();
+				return false;
+			}
+			emailInput.removeAttribute('aria-invalid');
+			return true;
+		}
+
+		if (stepNumber === 2) {
 			const nameInput = this.form.querySelector('input[name="name"]');
 			const value = (nameInput.value || '').trim();
 			const lettersOnlyName = /^[a-zA-Z\u00C0-\u024F\s'-]+$/;
@@ -298,20 +312,6 @@ class MultiStepModalForm {
 				return false;
 			}
 			nameInput.removeAttribute('aria-invalid');
-			return true;
-		}
-
-		if (stepNumber === 2) {
-			const emailInput = this.form.querySelector('input[name="email"]');
-			const email = (emailInput.value || '').trim();
-			const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-			if (!emailRegex.test(email)) {
-				emailInput.setAttribute('aria-invalid', 'true');
-				this.showError('Please enter a valid email address.');
-				emailInput.focus();
-				return false;
-			}
-			emailInput.removeAttribute('aria-invalid');
 			return true;
 		}
 
