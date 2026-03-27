@@ -394,7 +394,72 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 }
 
 @media (max-width: 768px) {
+	.wonderland-header__promo .wonderland-header__promo-meta,
+	.wonderland-header__promo .wonderland-header__promo-meta.is-layout-flex,
+	.wonderland-header__promo .wonderland-header__promo-meta.wp-block-group-is-layout-flex {
+		flex-wrap: nowrap !important;
+	}
+
 	.wonderland-header__main.alignfull {
 		padding: 10px 12px !important;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+	.wonderland-header__main > .alignwide,
+	.wonderland-header__main > .alignwide > .wp-block-group,
+	.wonderland-header__main .is-layout-flex,
+	.wonderland-header__main .alignwide.is-layout-flex,
+	.wonderland-header__main .alignwide > .wp-block-group.is-layout-flex,
+	.wonderland-header__main .wp-block-navigation__container.is-layout-flex,
+	.wonderland-header__main .wp-block-buttons.is-layout-flex,
+	.wonderland-header__main .wp-block-navigation__container {
+		display: flex;
+		flex-wrap: nowrap !important;
+	}
+
+	.wonderland-header__main .alignwide {
+		align-items: center;
+		justify-content: space-between !important;
+		column-gap: 8px;
+		row-gap: 0;
+	}
+
+	.wonderland-header__main .alignwide > .wp-block-group:first-child {
+		flex: 0 0 auto;
+	}
+
+	.wonderland-header__main .alignwide > .wp-block-group:last-child {
+		flex: 1 1 auto;
+		min-width: 0;
+		display: flex;
+		flex-wrap: nowrap !important;
+		justify-content: flex-end;
+		align-items: center;
+		column-gap: 8px;
+	}
+
+	.wonderland-header__main .wp-block-navigation__container {
+		column-gap: 10px;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	.wonderland-header__main .wp-block-site-logo img,
+	.wonderland-header__main .custom-logo {
+		width: 150px !important;
+		max-width: 100%;
+	}
+
+	.wonderland-header__quote-btn .wp-block-button__link {
+		padding: 9px 14px !important;
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+	.wonderland-header__main .wp-block-navigation a:where(:not(.wp-element-button)),
+	.wonderland-header__main .wp-block-navigation .wp-block-navigation-item:last-child > a {
+		font-size: 12px;
 	}
 }
