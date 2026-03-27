@@ -343,6 +343,10 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 		line-height: 1.25 !important;
 	}
 
+	p.wonderland-header__promo-copy.has-text-color {
+		text-align: center;
+	}
+
 	.wonderland-header__promo-copy a {
 		font-size: 12px !important;
 	}
@@ -380,7 +384,6 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 
 	.wonderland-header__main .alignwide > .wp-block-group:last-child {
 		display: flex;
-		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: flex-end;
 		gap: 8px;
@@ -458,6 +461,12 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 	.wonderland-header__quote-btn .wp-block-button__link {
 		padding: 9px 14px !important;
 		font-size: 12px;
+	}
+}
+
+@media (max-width: 600px) {
+	.wonderland-header__main .alignwide > .wp-block-group:last-child {
+		flex-direction: row-reverse;
 	}
 }
 

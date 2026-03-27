@@ -300,6 +300,7 @@
 		width: max-content;
 		max-width: 100%;
 		min-height: auto;
+		margin: 0 auto;
 	}
 }
 
