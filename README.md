@@ -3,6 +3,13 @@
 Child theme of **Twenty Twenty-Four** (custom blocks: hero, multi-step modal form, etc.).
 Development environment runs on Pantheon using its free Dev server.
 
+## What was implemented
+
+- Built a custom **Hero** as a dynamic Gutenberg block (`wonderland/hero`) with editable content, CTA links, and responsive styles.
+- Built a custom **Multi-step Modal Form** as a dynamic Gutenberg block (`wonderland/multi-step-modal-form`) with front-end behavior (open/close, steps, validation, success state).
+- Implemented the site header as a **theme template part** (`parts/header.html`) so it is managed at theme level and reused across pages.
+- Did **not** use ACF for this scope, because all required content is fully editable through the Site Editor and custom block controls.
+
 ## Reusing the Multi-step Modal Form block
 
 Add the block **once** per page/template so the modal exists in the DOM. Default modal id: `multi-step-form-modal` (configurable in block settings). Do not duplicate the same `modalId` on one page.
