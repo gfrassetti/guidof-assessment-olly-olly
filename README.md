@@ -9,6 +9,7 @@ Why this approach:
 
 - It preserves compatibility with WordPress core updates and keeps future maintenance simpler than a fully custom theme from scratch.
 - It allows focused customization only where needed (custom blocks, styles, and template parts) without rebuilding foundational behavior already solved by Twenty Twenty-Four.
+- It leverages `theme.json` to define project design tokens (colors, typography, spacing, layout) so blocks and global styles share a consistent source of truth.
 - It keeps a clear separation between inherited base capabilities and project-specific code, which improves reviewability and onboarding.
 - Working directly on an existing theme would also have been a valid option, but using a child theme avoids modifying parent files and reduces regression risk when the parent theme is updated.
 
