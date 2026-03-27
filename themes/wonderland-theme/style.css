@@ -321,6 +321,15 @@ body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focu
 		row-gap: 6px;
 	}
 
+	.wonderland-header__promo .wonderland-header__promo-meta,
+	.wonderland-header__promo .wonderland-header__promo-meta.is-layout-flex {
+		padding: 0.5rem 0 !important;
+	}
+
+	.wonderland-header__promo .wonderland-header__promo-meta.is-layout-flex > * {
+		margin: 0 auto !important;
+	}
+
 	.wonderland-header__promo-copy {
 		flex: 1 1 100%;
 		width: 100%;
