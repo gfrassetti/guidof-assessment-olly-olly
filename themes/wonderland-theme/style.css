@@ -1,0 +1,282 @@
+/*
+Theme Name: Wonderland Theme
+Theme URI: 
+Author: 
+Author URI: 
+Description: 
+Template: twentytwentyfour
+Version: 0.1.0
+Requires at least: 6.4
+Tested up to: 6.9
+Requires PHP: 7.4
+Text Domain: wonderland-theme
+*/
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+.wonderland-header__promo.alignfull {
+	box-sizing: border-box;
+	height: 66px;
+	min-height: 66px;
+	display: flex;
+	align-items: center;
+	padding-left: 7.5rem;
+	padding-right: 7.5rem;
+}
+
+.wonderland-header__promo .alignwide {
+	width: 100%;
+	max-width: 100%;
+}
+
+.wonderland-header__promo-copy {
+	margin: 0;
+	flex: 1 1 auto;
+	font-family: "Jost", sans-serif;
+}
+
+.wonderland-header__promo-copy strong {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+
+.wonderland-header__promo-copy a {
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+
+.wonderland-header__promo-copy a:hover,
+.wonderland-header__promo-copy a:focus {
+	text-decoration: none;
+}
+
+.wonderland-header__promo-meta {
+	flex: 0 0 auto;
+}
+
+.wonderland-header__main > .alignwide {
+	width: 100%;
+	max-width: 100%;
+}
+
+.wonderland-header__main.alignfull {
+	box-sizing: border-box;
+	height: 115.92px;
+	min-height: 115.92px;
+	display: flex;
+	align-items: center;
+}
+
+.wonderland-header__location-line {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0;
+}
+
+.wonderland-header__location-line::before {
+	content: "";
+	display: block;
+	flex-shrink: 0;
+	width: 30px;
+	height: 30px;
+	background: url("assets/images/pin.png") center / contain no-repeat;
+}
+
+.wonderland-header__phone-wrap .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 184px;
+	height: 42px;
+	min-height: 42px;
+	padding: 6px !important;
+	border-radius: 12px !important;
+	gap: 12px;
+	background-color: var(--wp--preset--color--wonderland-gold, #f1c500) !important;
+	color: var(--wp--preset--color--wonderland-gold-ink, #093317) !important;
+	transition: color 180ms ease, background-color 180ms ease;
+}
+
+.wonderland-header__phone-wrap .wp-block-button__link:hover,
+.wonderland-header__phone-wrap .wp-block-button__link:focus-visible {
+	color: var(--wp--preset--color--wonderland-cta-green, #22b712) !important;
+	background-color: #e6c200 !important;
+}
+
+.wonderland-header__phone-wrap .wp-block-button__link::before {
+	content: "";
+	display: block;
+	flex-shrink: 0;
+	width: 30px;
+	height: 30px;
+	background: url("assets/images/phone.png") center / contain no-repeat;
+}
+
+.wonderland-header__quote-btn .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	box-sizing: border-box;
+	border-radius: 12px !important;
+	padding: 16px 24px !important;
+	background-color: var(--wp--preset--color--wonderland-cta-green, #22b712) !important;
+	color: #fff !important;
+	transition: background-color 180ms ease, color 180ms ease;
+}
+
+body .wonderland-header__quote-btn .wp-block-button__link:hover,
+body .wonderland-header__quote-btn .wp-block-button__link:focus-visible,
+body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:hover,
+body .wonderland-header__quote-btn .wp-block-button__link.wp-element-button:focus-visible {
+	background-color: var(--wp--preset--color--wonderland-green, #18800c) !important;
+	color: #fff !important;
+}
+
+.wonderland-icon--yelp {
+	display: inline-block;
+	flex-shrink: 0;
+	width: 56.64px;
+	height: 56.64px;
+	background: url("assets/images/yelp.png") center / contain no-repeat;
+}
+
+.wonderland-header__main .wp-block-navigation a:where(:not(.wp-element-button)) {
+	color: #32484d;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.wonderland-header__main .wp-block-navigation a:where(:not(.wp-element-button)):hover {
+	color: #18800c;
+}
+
+.wonderland-header__main .wp-block-navigation .wp-block-navigation-item:last-child > a {
+	color: #18800c;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+@media (max-width: 781px) {
+	.wonderland-header__promo.alignfull {
+		height: auto;
+		min-height: auto;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.wonderland-header__main.alignfull {
+		height: auto;
+		min-height: 86px;
+		padding: 12px 24px !important;
+	}
+
+	.wonderland-header__main .alignwide {
+		row-gap: 0;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.wonderland-header__main .wp-block-site-logo img,
+	.wonderland-header__main .custom-logo {
+		width: 200px !important;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.wonderland-header__main .wp-block-navigation {
+		width: auto;
+	}
+
+	.wonderland-header__main .wp-block-navigation__container {
+		justify-content: flex-end;
+		row-gap: 0;
+		column-gap: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.wonderland-header__promo.alignfull {
+		padding: 8px 12px;
+	}
+
+	.wonderland-header__promo .alignwide {
+		row-gap: 6px;
+	}
+
+	.wonderland-header__promo-copy {
+		flex: 1 1 100%;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		font-size: 11px !important;
+		line-height: 1.25 !important;
+	}
+
+	.wonderland-header__promo-copy a {
+		font-size: 12px !important;
+	}
+
+	.wonderland-header__location-line {
+		font-size: 13px !important;
+	}
+
+	.wonderland-header__location-line::before,
+	.wonderland-header__phone-wrap .wp-block-button__link::before {
+		width: 22px;
+		height: 22px;
+	}
+
+	.wonderland-header__phone-wrap .wp-block-button__link {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		min-height: 36px;
+		padding: 4px 8px !important;
+		gap: 8px;
+		font-size: 13px;
+	}
+
+	.wonderland-header__main.alignfull {
+		padding: 10px 12px !important;
+		min-height: 74px;
+	}
+
+	.wonderland-header__main .alignwide {
+		justify-content: space-between !important;
+		flex-wrap: nowrap;
+	}
+
+	.wonderland-header__main .alignwide > .wp-block-group:first-child {
+		width: auto;
+		justify-content: flex-start !important;
+	}
+
+	.wonderland-header__main .wp-block-site-logo img,
+	.wonderland-header__main .custom-logo {
+		width: 160px !important;
+	}
+
+	.wonderland-header__quote-btn .wp-block-button__link {
+		padding: 10px 16px !important;
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,319 @@
+.wonderland-hero {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	min-height: 752.64px;
+	margin: 0;
+	background-color: #133b1e;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.entry-content > .wp-block-wonderland-hero.alignfull,
+.wp-block-post-content > .wp-block-wonderland-hero.alignfull,
+.has-global-padding > .wp-block-wonderland-hero.alignfull {
+	box-sizing: border-box;
+	max-width: none;
+	width: auto;
+	margin-left: calc(-1 * var(--wp--style--root--padding-left, 0px));
+	margin-right: calc(-1 * var(--wp--style--root--padding-right, 0px));
+}
+
+.wonderland-hero__bg-image-wrapper {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+}
+
+.wonderland-hero__bg-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.wonderland-hero__overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.28) 48%, rgba(0, 0, 0, 0.12) 100%);
+}
+
+.wonderland-hero__inner {
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	min-height: 224px;
+	opacity: 1;
+	padding: 100px 80px 100px 100px;
+	color: #fff;
+}
+
+.wonderland-hero__copy {
+	box-sizing: border-box;
+	width: 663px;
+	max-width: 100%;
+	min-height: 340px;
+}
+
+.wonderland-hero__subheadline,
+.wonderland-hero__description {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+	overflow-wrap: break-word;
+}
+
+.wonderland-hero__seo-title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.wonderland-hero__headline {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+	margin: 0 0 12px;
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 1.1;
+	hyphens: manual;
+	word-break: normal;
+	overflow-wrap: normal;
+}
+
+.wonderland-hero__subheadline {
+	margin: 0 0 10px;
+	color: #f1c500;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+	.wonderland-hero__subheadline {
+		white-space: nowrap;
+	}
+}
+
+.wonderland-hero__description {
+	margin: 0 0 24px;
+	box-sizing: border-box;
+	min-height: 48px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+}
+
+.wonderland-hero__cta-row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	width: 340px;
+	max-width: 100%;
+	min-height: 56px;
+	align-items: center;
+	gap: 24px;
+	margin-bottom: 20px;
+}
+
+.wonderland-hero__cta {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 42px;
+	padding: 10px 20px;
+	border-radius: 12px;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.wonderland-hero__cta--primary {
+	width: 171px;
+	min-height: 56px;
+	background: #22b712;
+	color: #fff;
+}
+
+.wonderland-hero__cta--primary:hover,
+.wonderland-hero__cta--primary:focus {
+	background: #18800c;
+	color: #fff;
+}
+
+.wonderland-hero__cta--secondary {
+	width: 145px;
+	min-height: 56px;
+	background: #fff;
+	color: #093317;
+}
+
+.wonderland-hero__cta--secondary:hover,
+.wonderland-hero__cta--secondary:focus {
+	background: #f2f2f2;
+	color: #093317;
+}
+
+.wonderland-hero__rating {
+	display: inline-flex;
+	align-items: center;
+	box-sizing: border-box;
+	width: 359.64px;
+	max-width: 100%;
+	min-height: 84.64px;
+	gap: 12px;
+	padding: 12px 14px;
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 10px;
+}
+
+.wonderland-hero__rating-text p {
+	margin: 0;
+}
+
+.wonderland-hero__rating-line {
+	margin: 0;
+}
+
+.wonderland-hero__stars-row {
+	display: inline-flex;
+	align-items: center;
+	box-sizing: border-box;
+	width: 186px;
+	height: 23.2px;
+	gap: 10px;
+}
+
+.wonderland-hero__stars-glyph {
+	display: inline-flex;
+	align-items: center;
+	flex: 0 0 auto;
+	gap: 0;
+	color: #f1c500 !important;
+	line-height: 1;
+}
+
+.wonderland-hero__star {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 23.2px;
+	height: 23.2px;
+	border-radius: 0.83px;
+	overflow: hidden;
+	font-size: 23.2px;
+	line-height: 1;
+	color: #f1c500 !important;
+}
+
+.wonderland-hero__rating-value {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 22px;
+	letter-spacing: 0.5px;
+	color: #32484d;
+}
+
+.wonderland-hero__reviews {
+	font-family: "Jost", sans-serif;
+	font-weight: 400;
+	color: #32484d;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: 0.04em;
+}
+
+@media (max-width: 767px) {
+	.wp-block-wonderland-hero.wonderland-hero {
+		min-height: 500px;
+		max-width: 100%;
+	}
+
+	.wonderland-hero__inner {
+		width: 100%;
+		max-width: 100%;
+		min-height: auto;
+		padding: 32px 16px;
+	}
+
+	.wonderland-hero__copy {
+		width: 100%;
+		min-height: 0;
+	}
+
+	.wonderland-hero__headline {
+		font-size: clamp(1.125rem, 4vw + 0.25rem, 1.5rem);
+		line-height: 1.2;
+	}
+
+	.wonderland-hero__subheadline {
+		font-size: clamp(1rem, 3vw + 0.2rem, 1.25rem);
+		line-height: 1.25;
+	}
+
+	.wonderland-hero__description {
+		font-size: 10px;
+		line-height: 1.45;
+	}
+
+	.wonderland-hero__cta-row {
+		width: 100%;
+		max-width: 340px;
+		margin-left: auto;
+		margin-right: auto;
+		min-height: auto;
+		justify-content: center;
+		row-gap: 12px;
+		column-gap: 24px;
+	}
+
+	.wonderland-hero__rating {
+		width: auto;
+		min-height: auto;
+	}
+
+	.wonderland-hero__stars-row {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		min-height: 23.2px;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 480px) {
+	.wonderland-hero__headline {
+		font-size: 1.25rem;
+		text-align:center;
+		
+	}
+
+	.wonderland-hero__subheadline {
+		font-size: 1rem;
+		text-align:center;
+		
+	}
+
+	.wonderland-hero__description {
+		font-size: 0.8125rem;
+		text-align: center;
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wonderland/hero",
+	"title": "Wonderland Hero",
+	"category": "design",
+	"icon": "cover-image",
+	"description": "Editable hero section for Wonderland landing.",
+	"textdomain": "wonderland-theme",
+	"editorScript": "file:./index.js",
+	"style": "file:./style.css",
+	"render": "file:./render.php",
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"attributes": {
+		"backgroundImageUrl": { "type": "string", "default": "" },
+		"backgroundImageId": { "type": "number" },
+		"headline": { "type": "string", "default": "As a Court Appointed Expert<br />Witness in Mold-Related<br />Cases, We're Trusted Across<br />Washington, DC" },
+		"subheadline": { "type": "string", "default": "Contact Us for a Free Consultation" },
+		"description": { "type": "string", "default": "Let our expertise guide you. Schedule a consultation to determine if on-site mold testing is the next step for you." },
+		"ctaPrimaryText": { "type": "string", "default": "Schedule a visit" },
+		"ctaPrimaryUrl": { "type": "string", "default": "#multi-step-form-modal" },
+		"ctaSecondaryText": { "type": "string", "default": "Call Us Now!" },
+		"ctaSecondaryUrl": { "type": "string", "default": "tel:+15080000000" },
+		"reviewsText": { "type": "string", "default": "Over 14.5k happy customers on Yelp" }
+	}
+}

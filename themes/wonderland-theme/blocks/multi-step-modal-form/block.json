@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wonderland/multi-step-modal-form",
+	"title": "Multi-step Modal Form",
+	"category": "design",
+	"icon": "feedback",
+	"description": "Reusable modal with multi-step lead form.",
+	"textdomain": "wonderland-theme",
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js",
+	"style": "file:./style.css",
+	"render": "file:./render.php",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"modalId": { "type": "string", "default": "multi-step-form-modal" },
+		"title": { "type": "string", "default": "Don't wait any longer!" },
+		"subtitle": { "type": "string", "default": "Fill out this form and we'll create the landscape of your dreams." },
+		"nameLabel": { "type": "string", "default": "First and last name" },
+		"namePlaceholder": { "type": "string", "default": "Jane Doe" },
+		"emailLabel": { "type": "string", "default": "Email*" },
+		"emailPlaceholder": { "type": "string", "default": "email@email.com" },
+		"phoneLabel": { "type": "string", "default": "Phone number*" },
+		"phonePlaceholder": { "type": "string", "default": "(000) 000 - 0000" },
+		"successTitle": { "type": "string", "default": "Thank you!" },
+		"successText": { "type": "string", "default": "We've received your information and we'll get back to you." }
+	}
+}
