@@ -1,6 +1,6 @@
 # Wonderland Theme
 
-Child theme of **Twenty Twenty-Four** (custom blocks: hero, multi-step modal form, etc.).
+I created this new sub-theme, Child theme of **Twenty Twenty-Four** (custom blocks: hero, multi-step modal form, etc.).
 Development environment runs on Pantheon using its free Dev server.
 
 ## What was implemented
