@@ -69,6 +69,10 @@ body .is-layout-flex {
 	flex: 0 0 auto;
 }
 
+.wonderland-header__promo .wonderland-header__promo-meta.is-layout-flex {
+	gap: 2rem;
+}
+
 .wonderland-header__main > .alignwide {
 	width: 100%;
 	max-width: 100%;

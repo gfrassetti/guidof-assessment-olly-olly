@@ -263,6 +263,7 @@ class MultiStepModalForm {
 
 	showStep(stepNumber) {
 		this.currentStep = stepNumber;
+		this.modalRoot.setAttribute('data-active-step', String(stepNumber));
 		this.steps.forEach(function (step) {
 			const isActive = Number(step.getAttribute('data-step')) === stepNumber;
 			step.hidden = !isActive;
