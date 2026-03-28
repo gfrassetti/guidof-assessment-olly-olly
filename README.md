@@ -31,4 +31,5 @@ Example:
 
 See `parts/header.html` for a live pattern. Multiple CTAs can point to one modal; use two blocks with different `modalId`s only if you need two modals.
 
-As for plugins, I've only used Yoast. Anyone who has worked with WordPress long enough knows that plugins only make the site slower.
+As for plugins, I've only used Yoast. Anyone who has worked with WordPress long enough knows that plugins only make the site slower, the less the better
+
