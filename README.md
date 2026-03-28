@@ -9,6 +9,7 @@ I created this child theme on top of **Twenty Twenty-Four** (custom blocks: hero
 - **Header** as a block **template part** (`parts/header.html`) so it is part of the theme structure (site-wide, editable in the Site Editor), not only page content.
 - **Design tokens** (colors, typography, spacing, layout) extended via **`theme.json`** so the design system stays consistent with the parent theme and the block editor.
 - **No ACF**: custom fields were not needed—content and options live in block attributes and the editor, which keeps the stack smaller and everything editable where editors already work.
+- **Technical SEO**
 
 ## Reusing the Multi-step Modal Form block
 
