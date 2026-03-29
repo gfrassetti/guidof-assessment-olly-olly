@@ -30,7 +30,12 @@ Example:
 <a class="js-open-modal" href="#multi-step-form-modal" data-modal-target="multi-step-form-modal" aria-controls="multi-step-form-modal" aria-haspopup="dialog">I Want a Quote</a>
 ```
 
+
+
 See `parts/header.html` for a live pattern. Multiple CTAs can point to one modal; use two blocks with different `modalId`s only if you need two modals.
 
 As for plugins, I've only used Yoast. Anyone who has worked with WordPress long enough knows that plugins only make the site slower, the less the better
 
+### Figma note ( success step)
+
+I treated part of the Figma as inconsistent: on the **last step**, after submit, it still implied the same header copy as during the flow. Once the form is completed, repeating that framing felt wrong, so **those blocks are hidden on the success state** and only the “Thank you” content remains. The UI is therefore **not pixel-perfect** against every Figma frame, but I preferred this correction—it reads clearer and more logical than copying the mockup literally.
